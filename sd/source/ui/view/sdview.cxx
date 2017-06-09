@@ -1020,7 +1020,7 @@ bool View::IsVectorizeAllowed() const
 
         if(pObj)
         {
-            if(GraphicType::Bitmap == pObj->GetGraphicType() && !pObj->isEmbeddedSvg())
+            if(GraphicType::Bitmap == pObj->GetGraphicType() && !pObj->isEmbeddedVectorGraphicData())
             {
                 bRet = true;
             }
